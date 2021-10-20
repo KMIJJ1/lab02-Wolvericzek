@@ -68,6 +68,9 @@ public class Main {
     }
 
     private static void ctverecVodorovnyVypis(int number) {
+        if (number <= 0){
+            return;
+        }
         System.out.print(" ");
         for (var i = 0; i < number; i++) {
             System.out.print("-");
@@ -76,6 +79,9 @@ public class Main {
     }
 
     private static void ctverecHorizontalniVypis(int number) {
+        if (number <= 0){
+            return;
+        }
         for (var j = 0; j < number; j++) {
             System.out.print("|");
             for (var i = 0; i < number; i++) {
